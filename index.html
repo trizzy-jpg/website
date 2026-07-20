@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meine Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">MeineWebsite</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Startseite</a></li>
+                <li><a href="#about" class="nav-link">Über mich</a></li>
+                <li><a href="#services" class="nav-link">Dienstleistungen</a></li>
+                <li><a href="#contact" class="nav-link">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Willkommen auf meiner Website</h1>
+            <p>Ich schaffe digitale Erlebnisse</p>
+            <button class="btn btn-primary">Mehr erfahren</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Über mich</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hallo! Ich bin ein leidenschaftlicher Webentwickler mit über 5 Jahren Erfahrung in der Erstellung moderner Websites und Webanwendungen.</p>
+                    <p>Meine Spezialisierungen sind:</p>
+                    <ul class="skills-list">
+                        <li>HTML & CSS</li>
+                        <li>JavaScript & React</li>
+                        <li>Backend-Entwicklung</li>
+                        <li>Responsives Design</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <img src="https://via.placeholder.com/300" alt="Profilbild">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Meine Dienstleistungen</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🌐</div>
+                    <h3>Webdesign</h3>
+                    <p>Modernes und ansprechendes Webdesign, das deine Marke repräsentiert.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚙️</div>
+                    <h3>Webentwicklung</h3>
+                    <p>Robuste und skalierbare Webanwendungen mit neuesten Technologien.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>Responsives Design</h3>
+                    <p>Websites die perfekt auf allen Geräten aussehen und funktionieren.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🚀</div>
+                    <h3>SEO-Optimierung</h3>
+                    <p>Optimierung für bessere Suchmaschinen-Rankings und mehr Sichtbarkeit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Kontaktiere mich</h2>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Dein Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Deine E-Mail" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" placeholder="Deine Nachricht" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Senden</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 MeineWebsite. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
