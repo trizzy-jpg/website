@@ -118,6 +118,83 @@ body {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* Über uns Bereich */
+.aboutus {
+    padding: 80px 20px;
+    background: white;
+}
+
+.aboutus h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: var(--dunkel-farbe);
+}
+
+.aboutus-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.aboutus-text p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.aboutus-text h3 {
+    color: var(--primär-farbe);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.values-list {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.values-list li {
+    padding: 1rem 0;
+    padding-left: 2rem;
+    position: relative;
+    border-bottom: 1px solid var(--rand-farbe);
+}
+
+.values-list li:before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--sekundär-farbe);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.aboutus-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.stat-card {
+    background: linear-gradient(135deg, var(--primär-farbe), var(--sekundär-farbe));
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 1rem;
+}
+
 /* Über-Bereich */
 .about {
     padding: 80px 20px;
@@ -300,6 +377,7 @@ body {
         font-size: 1.1rem;
     }
 
+    .aboutus-content,
     .about-content {
         grid-template-columns: 1fr;
     }
@@ -308,9 +386,14 @@ body {
         grid-template-columns: 1fr;
     }
 
+    .aboutus h2,
     .about h2,
     .services h2,
     .contact h2 {
         font-size: 1.8rem;
+    }
+
+    .stat-card {
+        margin: 0.5rem 0;
     }
 }
